@@ -60,7 +60,7 @@ When an OmO process dies, the next OmO process to start reports it: operating sy
 
 ### Feedback reports you choose to send
 
-A feedback report is not telemetry: OmO sends one only when you submit it, to our own service at `api.omo.dev`, together with what you wrote. While telemetry is on, the report also carries your install hash and session hash so we can match it to the related telemetry; while telemetry is off, it carries neither.
+A feedback report (`/feedback` or `/bug`) is separate from telemetry, and the "Never sent" list below covers telemetry only. OmO sends a report only when you choose **Send report**, to our own service at `api.omo.dev`; **See exactly what is sent** shows the full report first. Besides what you wrote, a report contains: your hostname; the session id, model and working directory; the last 50 messages of the conversation, including model replies; your settings; and the last 15 minutes of engine log fields. Passwords, keys and tokens are removed before sending. If you are signed in, the report is linked to your account, including its email address. If telemetry is on when the report is prepared, it also carries your install hash and session hash so we can match it to the related telemetry. Only the OmO team can read reports, and they are kept for 90 days.
 
 ### Never sent
 
